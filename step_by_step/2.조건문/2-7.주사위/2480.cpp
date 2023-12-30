@@ -92,3 +92,25 @@ int main(){
     return 0;
 }
 //조금 더 효율적인 코드가 있을 듯 고민해보기
+// 참고)바다코드
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int A, B, C, D;
+//     cin >> A >> B >> C;
+
+//     if (A == B && B == C) {
+//         D = 10000 + A * 1000;
+//     } else if (A == B || B == C || A == C) {
+//         // 중복된 두 눈이 나온 경우
+//         D = 1000 + (A == B ? A : C) * 100;
+//     } else {
+//         // 모두 다른 눈이 나온 경우
+//         D = max(max(A, B), C) * 100;
+//     }
+
+//     cout << D;
+
+//     return 0;
+// }
