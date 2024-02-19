@@ -13,5 +13,6 @@
         "unordered_map": "cpp",
         "chrono": "cpp",
         "string": "cpp"
-    }
+    },
+    "code-runner.runInTerminal": true
 }
