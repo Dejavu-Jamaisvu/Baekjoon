@@ -1,94 +1,18 @@
-// {
-//     "version": "0.2.0",
-//     "configurations": [
-//         {
-//             "name": "C/C++: clang++ 활성 파일 빌드 및 디버그",
-//             "type": "cppdbg",
-//             "request": "launch",
-//             "program": "${fileDirname}/${fileBasenameNoExtension}",
-//             "args": [],
-//             "stopAtEntry": false,
-//             "cwd": "${fileDirname}",
-//             "environment": [],
-//             "externalConsole": false,
-//             "MIMode": "lldb",
-//             "preLaunchTask": "C/C++: clang++ 활성 파일 빌드"
-//         }
-//     ]
-// }
-
-
-
-
-
-
-// {
-//     // Use IntelliSense to learn about possible attributes.
-//     // Hover to view descriptions of existing attributes.
-//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-//     "version": "0.2.0",
-//     "configurations": [
-//         {
-//             "name": "Debug",
-//             "type": "lldb",
-//             "request": "launch",
-//             "program": "${fileDirname}/${fileBasenameNoExtension}.o",
-//             "args": [
-//                 "Hello",
-//                 "World"
-//             ],
-//             "cwd": "${fileDirname}/",
-//             "preLaunchTask": "C/C++: g++ build active file"
-//         }
-//     ]
-// }
-// //https://korbillgates.tistory.com/248 [생물정보학자의 블로그:티스토리]
-
-
-
-
-
-// {
-//     "version": "0.2.0",
-//     "configurations": [
-
-//         {
-//             "type": "lldb",
-//             "request": "launch",
-//             "name": "Lldb debug",
-//             "program": "${fileDirname}/${fileBasenameNoExtension}",
-//             "args": [],
-//             "cwd": "${workspaceRoot}"
-//         }
-//     ]
-// }
-// //https://joyful-records.tistory.com/2
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
-    "version": "0.2.0",
     "configurations": [
         {
-            "type": "lldb",
+            "name": "C/C++: clang++ 활성 파일 빌드 및 디버그",
+            "type": "cppdbg",
             "request": "launch",
-            "name": "Launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "preLaunchTask": "g++ build active file",
-            "stdio": [null,null,null],
-            "terminal": "integrated"
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ 활성 파일 빌드"
         }
-    ]
+    ],
+    "version": "2.0.0"
 }
-// 출처: https://justdoitproject.tistory.com/31 [JUST DO IT PROJECT:티스토리]
