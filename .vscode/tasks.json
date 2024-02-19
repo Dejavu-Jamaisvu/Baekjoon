@@ -3,50 +3,23 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C bulid for clang",
-            "command": "clang",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "&&",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
             ],
             "options": {
-                "cwd": "${workspaceRoot}"
+                "cwd": "/usr/bin"
             },
-            "presentation": {
-                "clear": true
-            },
-            "group": "build",
-            "problemMatcher": []
-        },
-        {
-            "type": "shell",
-            "label": "C++ bulid for clang++",
-            "command": "clang++",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+            "problemMatcher": [
+                "$gcc"
             ],
-            "options": {
-                "cwd": "${workspaceRoot}"
-            },
-            "presentation": {
-                "clear": true
-            },
-            "group": "build",
-            "problemMatcher": []
-        },
-        {
-            "type": "shell",
-            "label": "execute",
-            "command": "${fileDirname}/${fileBasenameNoExtension}",
-            "group": "test",
-            "presentation": {
-                "clear": true
-            }
+            "group": "build"
         },
         {
             "type": "cppbuild",
@@ -74,4 +47,3 @@
         }
     ]
 }
-//https://joyful-records.tistory.com/2

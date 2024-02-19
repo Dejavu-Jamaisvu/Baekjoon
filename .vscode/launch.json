@@ -48,18 +48,47 @@
 
 
 
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+
+//         {
+//             "type": "lldb",
+//             "request": "launch",
+//             "name": "Lldb debug",
+//             "program": "${fileDirname}/${fileBasenameNoExtension}",
+//             "args": [],
+//             "cwd": "${workspaceRoot}"
+//         }
+//     ]
+// }
+// //https://joyful-records.tistory.com/2
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Lldb debug",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "name": "Launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
             "args": [],
-            "cwd": "${workspaceRoot}"
+            "preLaunchTask": "g++ build active file",
+            "stdio": [null,null,null],
+            "terminal": "integrated"
         }
     ]
 }
-//https://joyful-records.tistory.com/2
+// 출처: https://justdoitproject.tistory.com/31 [JUST DO IT PROJECT:티스토리]
