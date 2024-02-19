@@ -6,12 +6,10 @@ int fibonacci(int n)
 {
     if (n == 0)
     {
-        cout << 0;
         return 0;
     }
     else if (n == 1)
     {
-        cout << 1;
         return 1;
     }
     else
@@ -32,7 +30,7 @@ int main()
 
     cin >> n;
 
-    fibonacci(n);
+    cout << fibonacci(n);
 
     return 0;
 }
