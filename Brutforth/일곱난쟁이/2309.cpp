@@ -74,10 +74,9 @@
 //     return 0;
 // }
 
-//위에게 틀렸다고 함.
-//7개를 찾는게 아니라 2개를 찾아서 빼는 방법으로 변경함
-//위 방법은 후에 다시 해볼 것.
-
+// 위에게 틀렸다고 함.
+// 7개를 찾는게 아니라 2개를 찾아서 빼는 방법으로 변경함
+// 위 방법은 후에 다시 해볼 것.
 
 #include <iostream>
 #include <vector>
@@ -101,7 +100,9 @@ vector<int> findDwarfs(vector<int> &arr, int H, int total)
             if (sum == H)
             {
                 result.erase(result.begin() + j); // 인덱스 j의 제거 (0부터 시작) //j가 뒤 인덱스라 먼저 삭제해주어야함!!
-                result.erase(result.begin() + i); 
+                result.erase(result.begin() + i);
+                return result;
+                // 런타임에러 떠서 찾아보니 어떤분이 여기에 break 함. 내생각엔 여기 리턴하면 될듯해서 넣음 //https://www.acmicpc.net/board/view/64946
             }
         }
     }
